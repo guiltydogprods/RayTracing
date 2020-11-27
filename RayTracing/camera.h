@@ -1,6 +1,8 @@
 #pragma once
 
+#ifdef WINDOWS
 float drand48();
+#endif
 
 vec3 random_in_unit_disk()
 {

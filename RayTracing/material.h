@@ -1,7 +1,9 @@
 #pragma once
 
 vec3 random_in_unit_sphere();
+#ifdef WINDOWS
 float drand48();
+#endif
 
 class material
 {

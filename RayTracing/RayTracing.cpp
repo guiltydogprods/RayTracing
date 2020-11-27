@@ -1,17 +1,22 @@
 // RayTracing.cpp : Defines the entry point for the console application.
 //
-
+#ifdef WINDOWS
 #include "stdafx.h"
+#endif
+#include <iostream>
+#include <ostream>
 #include "sphere.h"
 #include "hitable_list.h"
 #include "float.h"
 #include "camera.h"
 #include "material.h"
 
+#ifdef WINDOWS
 float drand48()
 {
 	return float(rand() / (float)(RAND_MAX+1));
 }
+#endif
 
 vec3 random_in_unit_sphere()
 {
